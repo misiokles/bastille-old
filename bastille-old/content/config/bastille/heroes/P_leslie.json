@@ -1,0 +1,75 @@
+{
+	"po_leslie" :
+	{
+		"class" : "bopyromancer",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "Leslie",
+			"biography" : "Leslie married a dwarf prince and then become the nobility in Vori. However, she never feels pride for that. She never condescends herslf to others while meeting with civillians. ",
+			"specialty" :
+			{
+				"description" : "Receives a 5% per level bonus to Logistics skill percentage.",
+				"tooltip" : "Skill bonus: Logistics",
+				"name" : "Logistics"
+			}
+		},
+
+    "images": 		{
+			"specialtySmall" : "bastille/heroes/leslie/skill32-16.bmp",
+			"specialtyLarge" : "bastille/heroes/leslie/skill16.bmp",
+			"large" : "bastille/heroes/leslie/HPL007PY.bmp",
+			"small" : "bastille/heroes/leslie/HPS007PY.bmp"
+		},
+
+    "spellbook" :
+		[
+			"dispel" 
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "bodefender",
+				"max" : 20,
+				"min" : 15
+			},
+			{
+				"creature" : "bojaveliner",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "bobrute",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+
+		"skills" :
+		[
+      {
+        "level": "basic",
+        "skill": "fireMagic"
+      },
+      {
+        "level": "basic",
+        "skill": "logistics"
+      }
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"logistics" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"subtype" : "heroMovementLand",
+					"type" : "MOVEMENT",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}

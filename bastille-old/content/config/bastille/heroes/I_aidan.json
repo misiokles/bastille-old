@@ -1,0 +1,75 @@
+{
+	"io_aidan" :
+	{
+		"class" : "bopyromancer",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "Aidan",
+			"biography" : "Aidan fell in love with a human in the past, but she was not accepted to marry him in her hometown. Thus, she eloped with her love. However, when she learned they are also not accepted by human community, she had to give up and never believe 'love' any longer. ",
+			"specialty" :
+			{
+				"description" : "Receives a 5% per level bonus to Sorcery skill percentage.",
+				"tooltip" : "Skill bonus: Sorcery",
+				"name" : "Sorcery"
+			}
+		},
+
+    "images": 		{
+			"specialtySmall" : "bastille/heroes/aidan/skill32-9.bmp",
+			"specialtyLarge" : "bastille/heroes/aidan/skill9.bmp",
+			"large" : "bastille/heroes/aidan/HPL000PY.bmp",
+			"small" : "bastille/heroes/aidan/HPS000PY.bmp"
+		},
+
+    "spellbook" :
+		[
+			"magicArrow" 
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "bodefender",
+				"max" : 20,
+				"min" : 15
+			},
+			{
+				"creature" : "bojaveliner",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "bobrute",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+
+		"skills" :
+		[
+      {
+        "level": "basic",
+        "skill": "fireMagic"
+      },
+      {
+				"level" : "basic",
+				"skill" : "sorcery"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"sorcery" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "SPELL_DAMAGE",
+					"subtype" : "spellSchool.any",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}

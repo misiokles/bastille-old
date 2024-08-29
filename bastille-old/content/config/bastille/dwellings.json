@@ -1,0 +1,87 @@
+{
+    "core:creatureGeneratorCommon" : {
+        "types" : {
+            "bastilleLevel1" : {
+                "name" : "Dwarven Mines",
+                "creatures" : [[ "bodefender" ]],
+
+                "templates" : {
+                    "default" : {
+                        "animation" : "bastille/map/dwellings/Baston1",
+                        "mask" : ["VVVV", "VVVV", "VVBB", "VBAB" ]
+                    }
+                }
+            },
+            "bastilleLevel2" : {
+                "name" : "Hunter Camp",
+                "creatures" : [[ "bojaveliner" ]],
+
+                "templates" : {
+                    "default" : {
+                        "animation" : "bastille/map/dwellings/Baston2",
+                        "mask" : [ "VVBB","VBAB" ]
+                    }
+                }
+            },
+            "bastilleLevel3" : {
+                "name" : "Longhouse",
+                "creatures" : [[ "bobrute" ]],
+                "templates" : {
+                    "default" : {   
+                        "animation" : "bastille/map/dwellings/Baston3",
+                        "mask" : ["VVV","VBB","VBA" ]
+                    }
+                }
+            },
+            "bastilleLevel4" : {
+                "name" : "Iceberg Nest",
+				"creatures" : [[ "bosnowbird" ]],
+                "templates" : {
+                    "default" : {
+                        "animation" : "bastille/map/dwellings/Baston4",
+                        "mask" : ["VVV","VBB","VAB" ]
+                    }
+                }
+            },
+            "bastilleLevel5" : {
+                "name" : "Battle Fortress",
+                "creatures" : [[ "bogladiator" ]],
+                "guards" : [
+                    { "amount" : 9, "type" : "bogladiator" }
+                ],
+                "templates" : {
+                    "default" : {
+                        "animation" : "bastille/map/dwellings/Baston5",
+                        "mask" : [ "VBB","VBB","VBA"                        ]
+                    }
+                }
+            },
+            "bastilleLevel6" : {
+                "name" : "Frozen Cavern",
+                "creatures" : [[ "bomammoth" ]],
+                "guards" : [
+                    { "amount" : 6, "type" : "bomammoth" }
+                ],
+                "templates" : {
+                    "default" : {
+                        "animation" : "bastille/map/dwellings/Baston6",
+                        "mask" : ["VVV","VBB","VAB" ]
+                    }
+                }
+            },
+            "bastilleLevel7" : {
+                "name" : "Volcanic Vent",
+                "creatures" : [[ "bosfafnir" ]],
+                "guards" : [
+                    { "amount" : 3, "type" : "bosfafnir" }
+                ],
+                "templates" : {
+                    "default" : {
+                        "animation" : "bastille/map/dwellings/Baston7",
+                        "mask" : ["VVV", "VBB", "VBB","VAB" ]
+                    }
+                }
+            }
+        }       
+    }
+} 
